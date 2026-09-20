@@ -1,20 +1,40 @@
-package com.example.banderascompose
+package com.example.banderas
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
-fun Bandera<NombrePais>(modifier: Modifier = Modifier) {
-    // Aqui va el Row/Column/Box con las franjas o formas
+fun BanderaColombia(modifier: Modifier = Modifier) {
+    Column(modifier = modifier) {
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .weight(2f)
+                .background(Color.Yellow)
+        ) {
+        }
+        Box(modifier = Modifier
+            .fillMaxWidth()
+            .weight(1f)
+            .background(Color.Blue)
+        ){}
+        Box(modifier = Modifier
+            .fillMaxWidth()
+            .weight(1f)
+            .background(Color.Red)
+        ){}
+    }
 }
 
 @Preview(showBackground = true)
 @Composable
-fun Bandera<NombrePais>Preview() {
+fun BanderaColombiaPreview() {
     Surface {
-        Bandera<NombrePais>(modifier = Modifier.fillMaxSize())
+        BanderaColombia(modifier = Modifier.fillMaxSize())
     }
 }
