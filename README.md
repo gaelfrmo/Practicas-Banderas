@@ -11,7 +11,3 @@ Repositorio para las prácticas de Jetpack Compose de la materia de Desarrollo M
 * [practica-05-España](https://github.com/gaelfrmo/Practicas-Banderas/tree/practica-05-espana)
 * [practica-06-Colombia](https://github.com/gaelfrmo/Practicas-Banderas.git/tree/practica-06-colombia)
 * [practica-07-Argentina](https://github.com/gaelfrmo/Practicas-Banderas.git/tree/practica-07-argentina)
-* practica-08-Brasil
-* practica-09-Japón
-* practica-10-Estados Unidos
-* practica-11-Chile
