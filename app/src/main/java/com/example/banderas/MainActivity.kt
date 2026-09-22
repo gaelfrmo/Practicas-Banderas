@@ -46,45 +46,9 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun BanderaMexico(modifier: Modifier = Modifier) {
-    val image = painterResource(R.drawable.bandera_de_mexico)
     Box(modifier = modifier.fillMaxSize()) {
-        Row(modifier = Modifier.fillMaxSize()) {
-            Column(
-                modifier = Modifier
-                    .fillMaxHeight()
-                    .weight(1f)
-                    .background(color = Color.Green),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
-            ) {
-                Text(text = "M", color = Color.Black, fontSize = 90.sp)
-            }
-            Column(
-                modifier = Modifier
-                    .fillMaxHeight()
-                    .weight(1f)
-                    .background(color = Color.White),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
-            ) {
-                Image(
-                    painter = image,
-                    contentDescription = null,
-                    modifier = Modifier.height(100.dp),
-                    contentScale = ContentScale.Fit
-                )
-            }
-            Column(
-                modifier = Modifier
-                    .fillMaxHeight()
-                    .weight(1f)
-                    .background(color = Color.Red),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
-            ) {
-                Text(text = "E", color = Color.Black, fontSize = 90.sp)
-            }
-        }
+
+
     }
 }
 
