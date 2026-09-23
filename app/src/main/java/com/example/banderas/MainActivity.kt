@@ -1,5 +1,6 @@
 package com.example.banderas
 
+import Bandera.BanderaScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -36,34 +37,6 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun BanderaItalia(modifier: Modifier = Modifier) {
-    Box(modifier = modifier){
-        Row(modifier = Modifier){
-            Column(
-                modifier = Modifier
-                    .weight(1f)
-                    .fillMaxSize()
-                    .background(Color(0xFF009246)),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
-
-            ) { }
-            Column(
-                modifier = Modifier
-                    .weight(1f)
-                    .fillMaxSize(),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
-            ) { }
-            Column(
-                modifier = Modifier
-                    .weight(1f)
-                    .fillMaxSize()
-                    .background(Color(0xFFE81123)),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
-            ) { }
-        }
-    }
 
 }
 
@@ -71,6 +44,6 @@ fun BanderaItalia(modifier: Modifier = Modifier) {
 @Composable
 fun BanderaItaliaVista() {
     BanderasTheme {
-        BanderaItalia()
+        BanderaScreen()
     }
 }
