@@ -1,5 +1,6 @@
 package com.example.banderas
 
+import Bandera.BanderaScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -40,41 +41,12 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun BanderaEspana(modifier: Modifier = Modifier) {
-    val image = painterResource(R.drawable.logo_espana)
-    Column(modifier=modifier.fillMaxSize()) {
-        Box(
-            Modifier.weight(1f)
-                .fillMaxWidth()
-                .background(Color(0xFFAA151B))
-        )
-        Box(
-            modifier = Modifier
-                .weight(2f)
-                .fillMaxWidth()
-                .background(Color(0xFFF1BF00)),
-            contentAlignment = Alignment.CenterStart
-        ) {
-            Image(
-                painter = image,
-                contentDescription = null,
-                modifier = Modifier
-                    .height(180.dp)
-                    .padding(32.dp),
-                contentScale = ContentScale.Fit
-            )
-        }
-        Box(
-            Modifier.weight(1f)
-                .fillMaxWidth()
-                .background(Color(0xFFAA151B))
-        )
-    }
 }
 
 @Preview(showBackground = true)
 @Composable
 fun BanderaEspanaVista() {
     BanderasTheme {
-        BanderaEspana()
+        BanderaScreen()
     }
 }
