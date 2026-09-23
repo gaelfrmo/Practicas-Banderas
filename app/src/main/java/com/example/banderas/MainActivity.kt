@@ -1,5 +1,6 @@
 package com.example.banderas
 
+import Bandera.BanderaScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -30,31 +31,14 @@ class MainActivity : ComponentActivity() {
 }
 @Composable
 fun BanderaColombia(modifier: Modifier = Modifier) {
-    Column(modifier = modifier) {
-        Box(
-            modifier = Modifier
-                .fillMaxWidth()
-                .weight(2f)
-                .background(Color.Yellow)
-        ) {
-        }
-        Box(modifier = Modifier
-            .fillMaxWidth()
-            .weight(1f)
-            .background(Color.Blue)
-        ){}
-        Box(modifier = Modifier
-            .fillMaxWidth()
-            .weight(1f)
-            .background(Color.Red)
-        ){}
-    }
+
+
 }
 
 @Preview(showBackground = true)
 @Composable
 fun BanderaColombiaPreview() {
     Surface {
-        BanderaColombia(modifier = Modifier.fillMaxSize())
+        BanderaScreen()
     }
 }
