@@ -1,6 +1,7 @@
 package com.example.banderas
 
 
+import Screens.BanderaScreen
 import androidx.compose.ui.graphics.Color
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -46,16 +47,15 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun BanderaMexico(modifier: Modifier = Modifier) {
-    Box(modifier = modifier.fillMaxSize()) {
 
 
     }
-}
+
 
 @Preview(showBackground = true)
 @Composable
 fun BanderaMexicovista() {
     BanderasTheme {
-        BanderaMexico()
+        BanderaScreen()
     }
 }
