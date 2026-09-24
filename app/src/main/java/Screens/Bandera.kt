@@ -30,7 +30,7 @@ fun BanderaScreen(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .fillMaxHeight()
                 .weight(1f)
-                .background(colorResource(id=R.color.verdebandera)),
+                .background(colorResource(id=R.color.VerdeMexico)),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
@@ -40,7 +40,7 @@ fun BanderaScreen(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .fillMaxHeight()
                 .weight(1f)
-                .background(color = Color.White),
+                .background(colorResource(R.color.BlancoMexico)),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
@@ -55,11 +55,11 @@ fun BanderaScreen(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .fillMaxHeight()
                 .weight(1f)
-                .background(color = Color.Red),
+                .background(colorResource(R.color.RojoMexico)),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            Text(text = "E", color = Color.Black, fontSize = 90.sp)
+            Text(text =stringResource(R.string.E), color = Color.Black, fontSize = 90.sp)
         }
     }
 }
