@@ -8,7 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="whiter">#FFB3B3B3</color>
-    <color name="VerdeMexico">#006847</color>
-    <color name="BlancoMexico">#FFFFFF</color>
-    <color name="RojoMexico">#CE1125</color>
+    <color name="AzulFrancia">#000091</color>
+    <color name="BlancoFrancia">#FFFFFF</color>
+    <color name="RojoFrancia">#E1000F</color>
 </resources>

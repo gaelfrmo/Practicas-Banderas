@@ -18,13 +18,13 @@ import com.example.banderas.R
 import com.example.banderas.ui.theme.BanderasTheme
 
 @Composable
-fun BanderaMexico(modifier: Modifier = Modifier) {
+fun BanderaFrancia(modifier: Modifier = Modifier) {
     ConstraintLayout(modifier = modifier.fillMaxSize()) {
         val (Linea1, Linea2, Linea3, escudo) = createRefs()
 
         Box(
             modifier = Modifier
-                .background(colorResource(R.color.VerdeMexico))
+                .background(colorResource(R.color.AzulFrancia))
                 .constrainAs(Linea1) {
                     start.linkTo(parent.start)
                     end.linkTo(Linea2.start)
@@ -37,7 +37,7 @@ fun BanderaMexico(modifier: Modifier = Modifier) {
 
         Box(
             modifier = Modifier
-                .background(colorResource(R.color.BlancoMexico))
+                .background(colorResource(R.color.BlancoFrancia))
                 .constrainAs(Linea2) {
                     start.linkTo(Linea1.end)
                     end.linkTo(Linea3.start)
@@ -50,7 +50,7 @@ fun BanderaMexico(modifier: Modifier = Modifier) {
 
         Box(
             modifier = Modifier
-                .background(colorResource(R.color.RojoMexico))
+                .background(colorResource(R.color.RojoFrancia))
                 .constrainAs(Linea3) {
                     start.linkTo(Linea2.end)
                     end.linkTo(parent.end)
@@ -60,19 +60,6 @@ fun BanderaMexico(modifier: Modifier = Modifier) {
                     height = Dimension.fillToConstraints
                 }
         )
-
-        Image(
-            painter = painterResource(R.drawable.bandera_de_mexico),
-            contentDescription = "Null",
-            modifier = Modifier
-                .height(120.dp)
-                .constrainAs(escudo) {
-                    start.linkTo(Linea2.start)
-                    end.linkTo(Linea2.end)
-                    top.linkTo(parent.top)
-                    bottom.linkTo(parent.bottom)
-                }
-        )
     }
 }
 
@@ -80,6 +67,6 @@ fun BanderaMexico(modifier: Modifier = Modifier) {
 @Composable
 fun BanderaMexicovista() {
     BanderasTheme {
-        BanderaMexico()
+        BanderaFrancia()
     }
 }
