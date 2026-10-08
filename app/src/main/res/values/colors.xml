@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparente">#00000000</color>
+    <color name="negro">#000000</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="gris_ojo">#59636A</color>
+    <color name="naranja_principal">#F88A2B</color>
+    <color name="naranja_sombra">#D85D38</color>
+    <color name="naranja_cachete">#E85338</color>
+    <color name="amarillo_panza">#FFE196</color>
+    <color name="amarillo_llama">#FFEC00</color>
+    <color name="rojo_llama">#D8522A</color>
 </resources>
