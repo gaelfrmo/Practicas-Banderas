@@ -47,4 +47,4 @@ Repositorio para las prácticas de Jetpack Compose de la materia de Desarrollo M
 * [practica-19-Butan-constraint](https://github.com/gaelfrmo/Practicas-Banderas/blob/practica-19-butan-constrain/app/src/main/java/Screens/BanderaButan.kt)
 * [practica-20-Nepal](https://github.com/gaelfrmo/Practicas-Banderas/blob/practica-20-nepal/app/src/main/java/Screens/BanderaNepal.kt)
 * [practica-20-Nepal-constraint](https://github.com/gaelfrmo/Practicas-Banderas/blob/practica-20-nepal-constraint/app/src/main/java/Screens/BanderaNepal.kt)
-* [practica-21-Pixel Art]()
+* [practica-21-Pixel Art](https://github.com/gaelfrmo/Practicas-Banderas/blob/practica-21-pixel-art/app/src/main/java/Screens/pixelArt.kt)
